@@ -38,7 +38,7 @@ class PurchaseImportProducts(models.TransientModel):
                 "order_id": purchase.id,
                 "name": item.product_id.name,
                 "product_id": item.product_id.id,
-                "product_uom_qty": item.quantity,
+                "product_qty": item.quantity,
                 "product_uom": item.product_id.uom_id.id,
                 "price_unit": item.product_id.list_price,
             }
